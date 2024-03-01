@@ -1,6 +1,4 @@
 const express = require("express");
-const fs = require("node:fs/promises");
-
 const app = express();
 
 const PORT = 8080;
