@@ -7,6 +7,8 @@
     <title>Learning Locker</title>
 </head>
 
+<!--------------------------------------------           CSS               ---------------------------------------------------------->
+
 <style>
 
 #logo {
@@ -14,37 +16,88 @@
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #af0000;
-    font-family: 'Orbitron', monospace;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #af0000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-/* Style the navigation links */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
+.feature {
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+    margin-bottom: 40px;
 }
 
-/* Change color on hover */
-.navbar a:hover {
-    background-color: #ddd;
-    color: rgb(0, 60, 255);
-}
-
-#footer {
+.cards-container {
     display: flex;
-    align-items: last baseline;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar a {
+        margin: 5px 0; /* Adds spacing between navbar items when stacked */
+    }
+}
+
 
 
 
 </style>
+
+<!--------------------------------------------           HTML              ---------------------------------------------------------->
+
 
 <body>
     
@@ -60,18 +113,44 @@
     
     
     
-<main>
-
-
-
+<main class="main-content">
+    <section class="feature">
+        <h2>Welcome to Learning goals</h2>
+        <p>Discover the world of Erdal</p>
+    </section>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Explore this groundbreaking project that redefines industry standards.</p>
+        </div>
+        <div class="card">
+            <h3>Learning Goals</h3>
+            <p>Achieve your highest potential with our curated learning paths.</p>
+        </div>
+        <div class="card">
+            <h3>About Me</h3>
+            <p>Learn more about the journey that has led to where I am today.</p>
+        </div>
+    </div>
 </main>
 
 
-<footer>
+    <footer>
+        <p id="copyright-year">© Learning Locker 2024</p> 
+    </footer>
+    
 
 
+<!--------------------------------------------           JS               ---------------------------------------------------------->
 
-</footer>
+
+<script>
+
+const copyrightYearP = document.getElementById("copyright-year")
+const currentYear = new Date().getFullYear();
+copyrightYearP.textContent="©Learning Goals" + " " +currentYear;
+
+</script>
 
 </body>
 </html>
