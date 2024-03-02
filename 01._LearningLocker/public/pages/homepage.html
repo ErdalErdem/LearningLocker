@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #af0000;
     padding: 10px 0;
 }
 
@@ -91,6 +90,24 @@ footer {
     }
 }
 
+/* Navbar link base styles for transition */
+.navbar a {
+    color: white; /* Adjust as needed */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block; /* Allows for transformation */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    text-shadow: none; /* No shadow by default */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #fff53b; /* Bright color for text on hover */
+    transform: scale(1.1); /* Slightly enlarges the link */
+    text-shadow: 0 0 10px #ffdb3b, 0 0 20px #ffdb3b; /* Glowing effect */
+}
+
+
 
 
 
@@ -102,10 +119,9 @@ footer {
 <body>
     
     <nav class="navbar">
+        <a href="projects">Projects</a>
+        <a href="learning-goals.html">Aspirations</a>
         <a href="homepage.html"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/420591505_1060757385207780_1172672224328819069_n.png?_nc_cat=101&ccb=1-7&_nc_sid=510075&_nc_ohc=le1x-fsXpQwAX9Y_WWR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSb7kVz1M3WBr1-QlkfsU6GjDrwbcT3IsqYzmaPaysJWA&oe=660940C6" alt="Logo" style="height: 50px; width: auto;"></a>
-        <a href="homepage.html">Home</a>
-        <a href="learning-goals.html">Learning Goals</a>
-        <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
         <a href="about-me.html">About Me</a>
     </nav>
@@ -116,7 +132,7 @@ footer {
 <main class="main-content">
     <section class="feature">
         <h2>Welcome to Learning goals</h2>
-        <p>Discover the world of Erdal</p>
+
     </section>
     <div class="cards-container">
         <div class="card">
