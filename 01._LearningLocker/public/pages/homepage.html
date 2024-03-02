@@ -55,18 +55,18 @@
 .card {
     width: 300px;
     padding: 20px;
-    background-color: white;
+    background-color:#293646;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
 
 .card h3 {
-    color: #333;
+    color: white;
 }
 
 .card p {
-    color: #666;
+    color: white;
     font-size: 0.9rem;
 }
 
@@ -92,7 +92,7 @@ footer {
 
 /* Navbar link base styles for transition */
 .navbar a {
-    color: white; /* Adjust as needed */
+    color: #293646; /* Adjust as needed */
     text-decoration: none;
     padding: 10px;
     display: inline-block; /* Allows for transformation */
@@ -102,11 +102,27 @@ footer {
 
 /* Hover effect */
 .navbar a:hover {
-    color: #fff53b; /* Bright color for text on hover */
+    color: #000000; /* Bright color for text on hover */
     transform: scale(1.1); /* Slightly enlarges the link */
     text-shadow: 0 0 10px #ffdb3b, 0 0 20px #ffdb3b; /* Glowing effect */
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(orange, orangered);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: orange;
+}
+
+h2 {
+    color: #293646;
+}
+
+#copyright-year {
+    color: #293646;
+}
 
 
 
@@ -114,9 +130,10 @@ footer {
 </style>
 
 <!--------------------------------------------           HTML              ---------------------------------------------------------->
-
-
 <body>
+
+    <!-- Nav bar -->
+
     
     <nav class="navbar">
         <a href="projects">Projects</a>
@@ -127,20 +144,22 @@ footer {
     </nav>
     
     
-    
+    <!-- Main -->
+
     
 <main class="main-content">
+    
     <section class="feature">
-        <h2>Welcome to Learning goals</h2>
+        <h2>Welcome to Learning Locker</h2>
 
     </section>
     <div class="cards-container">
         <div class="card">
-            <h3>Project 1</h3>
-            <p>Explore this groundbreaking project that redefines industry standards.</p>
+            <h3>Project </h3>
+            <p> Explore a curated showcase of my projects, spanning through my fouth semester.</p>
         </div>
         <div class="card">
-            <h3>Learning Goals</h3>
+            <h3> Aspirations </h3>
             <p>Achieve your highest potential with our curated learning paths.</p>
         </div>
         <div class="card">
@@ -150,10 +169,14 @@ footer {
     </div>
 </main>
 
+<!-- Footer -->
 
-    <footer>
-        <p id="copyright-year">© Learning Locker 2024</p> 
-    </footer>
+<footer>
+
+    <p id="copyright-year">© Learning Locker 2024</p> 
+
+</footer>
+
     
 
 
