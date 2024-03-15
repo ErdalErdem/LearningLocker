@@ -4,17 +4,15 @@ const app = express();
 
 app.use(express.static("public"));
 
+// Refactoring SSR And routes
 
-import { homepagePage, matchesPage, contactPage } from "./util/readPages.js";
+
+import pagesRouter from "./routers/pagesRouter.js";
+app.use(pagesRouter);
+
 
 const PORT = 8080;
 app.listen(PORT, () => console.log("Server is running on port", PORT));
-
-// Refactoring SSR
-
-app.get("/", (req, res) => {
-    res.send(homepagePage);
-});
 
 
 // Old code
