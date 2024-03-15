@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
     res.send(homepagePage);
 });
 
-router.get("/matches", (req, res) => {
+router.get("/aboutme", (req, res) => {
     res.send(aboutme);
 });
 
