@@ -3,18 +3,23 @@ import { readPage, renderPage } from "./templatingEngine.js";
 const homepage = readPage("./public/pages/homepage/homepage.html");
 export const homepagePage = renderPage(homepage, {
     tabTitle: "Learning Locker",
-    CSSLinks: '<link rel="stylesheet" href="/pages/matches/matches.css">'
+    CSSLinks: ''
 });
 
-/*
-const matches = readPage("./public/pages/matches/matches.html");
-export const matchesPage = renderPage(matches, {
-    tabTitle: "DogInder Match",
-    CSSLinks: '<link rel="stylesheet" href="/pages/matches/matches.css">'
+
+const aboutme = readPage("./public/pages/aboutme/aboutme.html");
+export const aboutMe = renderPage(aboutme, {
+    tabTitle: "Learning Locker",
+    CSSLinks: ''
 });
 
 const contact = readPage("./public/pages/contact/contact.html");
-export const contactPage = renderPage(contact, {
-    tabTitle: "DogInder Contact"
+export const contactMe = renderPage(contact, {
+    tabTitle: "Learning Locker"
 });
-*/
+
+const learninggoals = readPage("./public/pages/learninggoals/learninggoals.html");
+export const learningGoals = renderPage(learninggoals, {
+    tabTitle: "Learning Locker",
+    CSSLinks: ''
+});
