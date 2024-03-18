@@ -20,9 +20,4 @@ router.get("/learning", (req, res) => {
 });
 
 
-router.get("/page", (req, res) => {
-    res.send("<div><h1>sdfdsfdsf</h1><h2>sdfdsfdsfdsfsdfsdf</h2></div>");
-});
-
-
 export default router;
