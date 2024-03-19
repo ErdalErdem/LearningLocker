@@ -1,0 +1,114 @@
+#logo {
+    width: 7em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    background-color:#293646;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar a {
+        margin: 5px 0; /* Adds spacing between navbar items when stacked */
+    }
+}
+
+/* Navbar link base styles for transition */
+.navbar a {
+    color: #293646; /* Adjust as needed */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block; /* Allows for transformation */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    text-shadow: none; /* No shadow by default */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #000000; /* Bright color for text on hover */
+    transform: scale(1.1); /* Slightly enlarges the link */
+    text-shadow: 0 0 10px #ffdb3b, 0 0 20px #ffdb3b; /* Glowing effect */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(orange, orangered);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: orange;
+}
+
+h2 {
+    color: #293646;
+}
+
+#copyright-year {
+    color: #293646;
+}
+
+

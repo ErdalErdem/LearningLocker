@@ -1,16 +1,13 @@
 import { readPage, renderPage } from "./templatingEngine.js";
 
 const homepage = readPage("./public/pages/homepage/homepage.html");
-export const homepagePage = renderPage(homepage, {
-    tabTitle: "Learning Locker",
-    CSSLinks: ''
-});
+export const homepagePage = renderPage(homepage);
 
 
 const aboutme = readPage("./public/pages/aboutme/aboutme.html");
 export const aboutMe = renderPage(aboutme, {
     tabTitle: "Learning Locker",
-    CSSLinks: ''
+    CSSLinks: '<link rel="stylesheet" href="/pages/homepage/homepage.css"'
 });
 
 const contact = readPage("./public/pages/contact/contact.html");
