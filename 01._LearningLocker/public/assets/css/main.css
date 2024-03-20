@@ -40,9 +40,9 @@
 }
 
 .card {
-    width: 300px;
+    width: 750px;
     padding: 20px;
-    background-color:#293646;
+    background-color:#ff8400;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
@@ -79,7 +79,7 @@ footer {
 
 /* Navbar link base styles for transition */
 .navbar a {
-    color: #293646; /* Adjust as needed */
+    color: #ffffff; /* Adjust as needed */
     text-decoration: none;
     padding: 10px;
     display: inline-block; /* Allows for transformation */
@@ -89,7 +89,7 @@ footer {
 
 /* Hover effect */
 .navbar a:hover {
-    color: #000000; /* Bright color for text on hover */
+    color: #ffffff; /* Bright color for text on hover */
     transform: scale(1.1); /* Slightly enlarges the link */
     text-shadow: 0 0 10px #ffdb3b, 0 0 20px #ffdb3b; /* Glowing effect */
 }
@@ -104,11 +104,40 @@ body {
 }
 
 h2 {
-    color: #293646;
+    color: #ffffff;
 }
 
 #copyright-year {
-    color: #293646;
+    color: #ffffff;
+}
+
+.card-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent elements */
+}
+
+.card {
+    cursor: pointer; /* Changes the mouse cursor to indicate the item is clickable */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds shadow to make the card "pop" */
+}
+
+pre {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 1px solid #ddd; /* Add a light border */
+    border-left: 3px solid #f36d33; /* Add a thicker left border for accent */
+    color: #666; /* Darker text color for contrast */
+    page-break-inside: avoid;
+    font-family: monospace; /* Ensures text is displayed in a fixed-width font */
+    margin: 20px; /* Add some margin around the pre element */
+    padding: 20px; /* Add some padding inside the pre element */
+    overflow: auto; /* Ensures content is scrollable if it overflows */
+    white-space: pre-wrap; /* Allows words to wrap if needed */
+    word-wrap: break-word; /* Ensures long words can break and wrap to the next line */
 }
 
 

@@ -8,9 +8,10 @@ app.use(express.json())
 
 import { readpage, renderPage } from "./util/templateEngine.js";
 
-// rendering pages
+// Rendering pages
 
 const homepage = readpage("./public/pages/homepage/homepage.html")
+    // cssLinks: `<link rel="stylesheet" href="/public/assets/css/main.css">`
 const homepagePage = renderPage(homepage)
     
 const about = readpage("./public/pages/about/about.html")
@@ -19,20 +20,15 @@ const aboutPage = renderPage(about)
 const contact = readpage("./public/pages/contact/contact.html")
 const contactPage = renderPage(contact)
 
-const learninggoals = readpage("./public/pages/learninggoals/learninggoals.html")
-const learninggoalsPage = renderPage(learninggoals)
+const theory = readpage("./public/pages/theory/theory.html")
+const theoryPage = renderPage(theory)
 
+const commands = readpage("./public/pages/commands/commands.html")
+const commandsPage = renderPage(commands)
 
+const toolsused = readpage("./public/pages/toolsused/toolsused.html")
+const toolsusedPage = renderPage(toolsused)
 
-
-/*
-
-const loginPage = readpage("./public/pages/login/login.html", {
-    cssLinks: `<link rel="stylesheet" href="./public/pages/login/login.css">`
-})
-const loginPagePage = renderPage(loginPage)
-
-*/
 
 //Mapping our endpoints 
 
@@ -48,12 +44,17 @@ app.get("/contact", (req, res) => {
     res.send(contactPage)
 })
 
-app.get("/learninggoals", (req, res) => {
-    res.send(learninggoalsPage)
+app.get("/theory", (req, res) => {
+    res.send(theoryPage)
 })
 
+app.get("/commands", (req, res) => {
+    res.send(commandsPage)
+})
 
-
+app.get("/toolsused", (req, res) => {
+    res.send(toolsusedPage)
+})
 
 // Running on port 8080
 
