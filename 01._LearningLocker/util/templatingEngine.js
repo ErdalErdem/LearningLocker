@@ -13,10 +13,3 @@ export function renderPage(page, config={}) {
      + page 
      + footer;
 }
-
-const pageURI = "./public/pages/"; 
-const pageCSS = `<link rel="stylesheet" href="/pages/`;
-const pageJS = `<script src="/pages/`;
-const pageJSEnd = `.js"></script>`
-
-const aboutmeRender = renderPage( pageURI + "/aboutme/aboutme.html",  { tabTitle: "Learning Locker", cssLink: pageCSS + `aboutme/aboutme.css">`, } );

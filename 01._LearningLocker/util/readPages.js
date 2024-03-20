@@ -6,9 +6,10 @@ export const homepagePage = renderPage(homepage);
 
 const aboutme = readPage("./public/pages/aboutme/aboutme.html");
 export const aboutMe = renderPage(aboutme, {
-    tabTitle: "Learning Locker",
-    CSSLinks: ""
+    tabTitle: "About Me - Learning Locker",
+    CSSLinks: "<link rel='stylesheet'/pages/aboutme/aboutme.css'>"
 });
+
 
 const contact = readPage("./public/pages/contact/contact.html");
 export const contactMe = renderPage(contact, {
