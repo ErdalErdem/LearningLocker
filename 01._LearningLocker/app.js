@@ -8,7 +8,7 @@ app.use(express.json())
 
 import { readpage, renderPage } from "./util/templateEngine.js";
 
-// Rendering pages
+// ------------------------ Render and Reading pages ------------------------------
 
 const homepage = readpage("./public/pages/homepage/homepage.html")
     // cssLinks: `<link rel="stylesheet" href="/public/assets/css/main.css">`
@@ -30,7 +30,30 @@ const toolsused = readpage("./public/pages/toolsused/toolsused.html")
 const toolsusedPage = renderPage(toolsused)
 
 
-//Mapping our endpoints 
+const dateobj  = readpage("./public/pages/dateobj/dateobj.html")
+const dateobjPage = renderPage(dateobj)
+
+const fetch = readpage("./public/pages/fetch/fetch.html")
+const fetchPage = renderPage(fetch)
+
+const readAndRender = readpage("./public/pages/readandrender/readandrender.html")
+const readAndRenderPage = renderPage(readAndRender)
+
+const rest = readpage("./public/pages/rest/rest.html")
+const restPage = renderPage(rest)
+
+const webadress = readpage("./public/pages/toolsused/toolsused.html")
+const webadressPage = renderPage(webadress)
+
+const nodemon = readpage("./public/pages/nodemon/nodemon.html")
+const nodemonPage = renderPage(nodemon)
+
+const git = readpage("./public/pages/git/git.html")
+const gitPage = renderPage(git)
+
+
+
+// ------------------------ Mapping our endpoints ------------------------------
 
 app.get("/", (req, res) => {
     res.send(homepagePage)
@@ -56,7 +79,39 @@ app.get("/toolsused", (req, res) => {
     res.send(toolsusedPage)
 })
 
-// Running on port 8080
+app.get("/dateobj", (req, res) => {
+    res.send(dateobjPage)
+})
+
+app.get("/fetch", (req, res) => {
+    res.send(fetchPage)
+})
+
+app.get("/readAndRender", (req, res) => {
+    res.send(readAndRenderPage)
+})
+
+app.get("/rest", (req, res) => {
+    res.send(restPage)
+})
+
+app.get("/toolsused", (req, res) => {
+    res.send(toolsusedPage)
+})
+
+app.get("/webadress", (req, res) => {
+    res.send(webadressPage)
+})
+
+app.get("/nodemon", (req, res) => {
+    res.send(nodemonPage)
+})
+
+app.get("/git", (req, res) => {
+    res.send(gitPage)
+})
+
+// ------------------------ Running on port 8080 ------------------------------
 
 const PORT = 8080;
 app.listen(PORT, () => console.log("Server is running on port", PORT));

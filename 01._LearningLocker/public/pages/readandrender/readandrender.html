@@ -1,0 +1,28 @@
+<div class="cards-container">
+    <div class="card">
+        <h3>Read/Render</h3>
+        <p>
+
+This code snippets shows the way our program reads and renders our pages, so furture preformens is better
+
+        </p>
+
+<pre>
+
+    export function readpage (filepath) {
+        return fs.readFileSync(filepath).toString()
+    }
+    
+    export function renderPage(page, config = {}){
+        const navbar = fs.readFileSync("./public/components/navbar/navbar.html").toString()
+        .replace("$CSS_LINKS", config.cssLinks || "")
+    
+        const footer = fs.readFileSync("./public/components/footer/footer.html").toString()   
+        
+        return navbar + page + footer
+    }
+   
+
+</pre>
+    </div>
+</a>

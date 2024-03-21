@@ -1,0 +1,44 @@
+<div class="cards-container">
+    <div class="card">
+        <h3>Rest api</h3>
+      
+<pre>
+
+
+    app.get("/assigments", (req, res) => {
+        
+        //code that gets a list of mountains
+
+        res.send({ data: assigmentslist });
+      });
+      
+      app.get("/assigments/:id", (req, res) => {
+        
+
+          return res.send({ data: foundAssigments });
+        }
+      );
+      
+      app.post("/assigments", (req, res) => {
+        
+
+        res.send({ data: assigment });
+        }
+      );
+      
+      app.put("/assigments/:id",  (req, res) => {
+
+
+          return res.send({ data: foundAssigment });
+        }
+      );
+      
+      app.delete("/assigments/:id", (req, res) => {
+        
+       
+      });
+
+ 
+</pre>
+    </div>
+</a>

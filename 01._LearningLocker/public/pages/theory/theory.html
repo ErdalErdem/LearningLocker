@@ -1,98 +1,50 @@
 
 <body>
     
-<!-- Date side -->
+    <div class="cards-container">
+        <div class="card">
+            <h3>Date object </h3>
+            <a href="dateobj">Date object </a>
+            
+
+        </div>
+    </a>
 
     <div class="cards-container">
-            <div class="card">
-                <h3>Date ojects</h3>
-                <p>This showcases some of the methods we learned to handle the date object in node</p>
-                <pre>
+        <div class="card">
+            <h3>Fetch</h3>
+            <a href="fetch">fetch </a>
+            
 
-console.log(new Date());
+        </div>
+    </a>
 
-// Unix Epoch Time (Seconds since 1970 Jan. 1st)
-console.log(Date.now());
+    <div class="cards-container">
+        <div class="card">
+            <h3>Read and Render </h3>
+            <a href="readandrender">Read and Render </a>
+            
 
-// Local time (in my case right now and here CEST GMT+0100)
-console.log(Date());
+        </div>
+    </a>
 
+    <div class="cards-container">
+        <div class="card">
+            <h3>Rest</h3>
+            <a href="rest"> Rest </a>
+            
 
+        </div>
+    </a>
 
+    <div class="cards-container">
+        <div class="card">
+            <h3>Webadress </h3>
+            <a href="webadress">Webadress</a>
+            
 
-const months = ["January", "February", "March", "April", "May", "June", "July", 
-                "August", "September", "October", "November", "December"];
-
-app.get("/month/version1", (req, res) => {
-    const monthIndex = new Date().getMonth();
-
-    res.send({ data: months[monthIndex] });
-});
-
-app.get("/month/version2", (req, res) => {
-    const monthName = new Date().toLocaleDateString("en-us", { month: "long" })
-    res.send({ data: monthName });
-});
-
-app.get("/month/version3", (req, res) => {
-    const monthName = Date().split(" ")[1];
-    res.send({ data: monthName });
-});
-
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-app.get("/day", (req, res) => {
-    const dayName = days[new Date().getDay()];
-    res.send({ data: dayName });
-});
-
-
-                </pre>
-            </div>
-        </a>
-
-<!-- fetch -->
-
-<div class="cards-container">
-    <div class="card">
-        <h3>Fetch</h3>
-        <p>This section highlights our practical application of the fetch API within our projects, 
-            particularly through this code snippet that demonstrate how we 
-            integrated methods from our app.js class into the frontend.</p>
-
-<pre>
-
-    function fetchDate() {
-        fetch('/date')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('date').textContent = data.data;
-            })
-            .catch(error => {
-                console.error('Error fetching the date:', error);
-                document.getElementById('date').textContent = 'Failed to load date.';
-            });
-    }
-    
-    document.getElementById('fetch-date-btn').addEventListener('click', fetchDate);
-    
-    function updateClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const seconds = now.getSeconds().toString().padStart(2, '0');
-        document.getElementById('digital-clock').textContent = `${hours}:${minutes}:${seconds}`;
-    }
-    
-    setInterval(updateClock, 1000);
-    updateClock(); // Opdater uret med det samme ved indlæsning
-    
-
-</pre>
-    </div>
-</a>
-
-
+        </div>
+    </a>
 
 </body>
 </html>
