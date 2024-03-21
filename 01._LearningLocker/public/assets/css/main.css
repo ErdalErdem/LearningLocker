@@ -140,4 +140,20 @@ pre {
     word-wrap: break-word; /* Ensures long words can break and wrap to the next line */
 }
 
+.contact-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 

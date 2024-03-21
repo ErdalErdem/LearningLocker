@@ -51,6 +51,9 @@ const nodemonPage = renderPage(nodemon)
 const git = readpage("./public/pages/git/git.html")
 const gitPage = renderPage(git)
 
+const packagejson = readpage("./public/pages/packagejson/packagejson.html")
+const packagejsonPage = renderPage(packagejson)
+
 
 
 // ------------------------ Mapping our endpoints ------------------------------
@@ -109,6 +112,10 @@ app.get("/nodemon", (req, res) => {
 
 app.get("/git", (req, res) => {
     res.send(gitPage)
+})
+
+app.get("/packagejson", (req, res) => {
+    res.send(packagejsonPage)
 })
 
 // ------------------------ Running on port 8080 ------------------------------
