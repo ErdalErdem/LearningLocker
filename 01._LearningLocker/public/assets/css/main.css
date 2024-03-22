@@ -126,20 +126,6 @@ h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Adds shadow to make the card "pop" */
 }
 
-pre {
-    background-color: #f4f4f4; /* Light grey background */
-    border: 1px solid #ddd; /* Add a light border */
-    border-left: 3px solid #f36d33; /* Add a thicker left border for accent */
-    color: #666; /* Darker text color for contrast */
-    page-break-inside: avoid;
-    font-family: monospace; /* Ensures text is displayed in a fixed-width font */
-    margin: 20px; /* Add some margin around the pre element */
-    padding: 20px; /* Add some padding inside the pre element */
-    overflow: auto; /* Ensures content is scrollable if it overflows */
-    white-space: pre-wrap; /* Allows words to wrap if needed */
-    word-wrap: break-word; /* Ensures long words can break and wrap to the next line */
-}
-
 .contact-info {
     background-color: #f4f4f4;
     padding: 20px;
